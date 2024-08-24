@@ -12,3 +12,11 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model MY {
+  title String @id
+  award String? 
+  contents String?
+  school String?
+  skills String? //Nullable 컬럼 생성
+} 
